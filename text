@@ -1,0 +1,659 @@
+body{
+    
+    margin: 0;
+    font-family: monospace;
+    height: 6650px;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+
+/*header*/
+
+/* logo */
+
+.header{
+
+    background-color: rgb(213, 233, 226);
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.sign{
+
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    margin: auto 0 auto 20px;
+
+}
+
+.sign img{
+
+    height: 40px;
+    margin-right: 10px;
+}
+
+.sign a{
+
+    color: black;
+    text-decoration: none;
+    margin: auto 5px;
+    font-size: 25px;
+    text-transform: uppercase;
+
+}
+
+/*menu*/
+
+.menu{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: azure;
+    margin: 0;
+
+}
+
+.menu div{
+
+    margin: auto ;
+
+}
+
+.menu a{
+
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.moreBtn{
+
+    height: 25px;
+    position: fixed;
+    top: 20px;
+    left: 90%;
+    z-index: 1;
+
+}
+
+.yMenu{
+
+    flex-direction: column;
+    height: 500px;
+    position: fixed;
+    top: 70px;
+    text-align: center;
+    z-index: 1;
+
+}
+
+.yMenu div{
+
+    margin: 30px;
+
+}
+
+@media screen and (max-width: 950px) {
+
+    .sign a{
+
+        font-size: 20px;
+
+    }
+
+    .sign img{
+
+        height: 30px;
+
+    }
+
+    .yMenu{
+
+        height: 400px;
+
+    }
+
+    .menu a{
+
+        font-size: 20px;
+
+    }
+
+}
+
+.aboutContent{
+
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+
+}
+
+.aboutContent img{
+
+    height: 600px;
+    width: 400px;
+    margin-top: 0px;
+    margin-left: 100px;
+
+}
+
+.aboutContent p{
+
+    text-align: left;
+    font-size: 25px;
+    margin: auto 80px;
+
+}
+
+/*responsive rules*/
+
+@media screen and (max-width: 1240px) {
+
+    .aboutContent{
+
+        flex-direction: column;
+    }
+
+    .aboutContent img{
+
+        height: 300px;
+        width: 200px;
+        margin: 30px auto;
+
+    }
+    
+    .aboutContent p{
+
+        font-size: 15px;
+        text-align: center;
+        margin-top: auto;
+        color: white;
+
+    }
+
+}
+
+/*skill*/
+.skillContent{
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+
+}
+
+.skill {
+
+    margin: 0px auto;
+
+}
+
+.skills img{
+
+    height: 100px;
+
+}
+
+.stars img{
+
+    height: 40px;
+    margin: 50px 0px;
+    
+}
+
+
+
+@media screen and (max-width: 1600px){
+
+    .skillContent{
+
+        margin-top: 0;
+
+    }
+
+    .skills img{
+
+        height: 60px;
+        margin: 20px;
+        
+    }
+
+    .skill{
+
+        margin-left: 15%;
+        width: 120px;
+
+    }
+
+    .skillContent{
+
+        flex-direction: column;
+
+    }
+    
+    .skill{
+
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .stars{
+
+        display: flex;
+        flex-direction: row;
+        margin-left: 30px;
+
+    }
+
+    .stars img{
+
+        height: 20px;
+        margin: auto 5px;
+        
+    }
+    
+
+}
+
+/*education*/
+
+.educationContent{
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+
+}
+
+.eduItems{
+
+    margin: auto;
+    font-size: 30px;
+
+}
+
+.eduItems img{
+
+    height: 300px;
+
+}
+
+@media screen and (max-width: 1240px) {
+
+    .educationContent{
+
+        flex-direction: column;
+
+    }
+
+    .eduItems{
+
+        font-size: 20px;
+        margin-bottom: 60px;
+
+    }
+
+    .eduItems img{
+
+        height: 150px;
+
+    }
+
+}
+
+/*projects*/
+
+.pro{
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.pro img{
+    height: 400px;
+    widows: auto;
+    margin: 60px 200px;
+}
+
+.pro p{
+    margin: 60px 200px;
+
+}
+
+.right{
+    height: 80px;
+    position: absolute;
+    opacity: 0.7;
+    top: 480px;
+    right: 0;
+}
+
+.left{
+    height: 80px;
+    position: absolute;
+    opacity: 0.7;
+    top: 480px;
+    left: 0;
+}
+
+.left:hover, .right:hover{
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 1240px) {                    
+
+
+    .pro{
+        flex-direction: column;
+        font-size: 20px;
+    }
+    
+    .pro img{
+        height: 150px;
+        width: 200px;
+        margin: 100px auto;
+    }
+    
+}
+
+/*hobbies*/
+
+.hobbyitems {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.hobby{
+
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+
+}
+
+.hobbies img{
+
+    height: 200px;
+    margin: 50px 100px;
+
+}
+
+@media screen and (max-width: 1250px) {                    
+
+    .hobbyitems {
+
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+
+    .hobby{
+
+        flex-direction: row;
+        margin: auto 100px;
+    
+    }
+    
+    .hobbies img{
+    
+        height: 100px;
+        margin: 30px;
+    
+    }
+
+    .hobbies p{
+
+        font-size: 15px;
+        margin: auto;
+
+    }
+    
+}
+
+/*contact*/
+
+.contact{
+    text-align: center;
+    display: block;
+    color: white;
+    opacity: 0.9;
+    margin : 8% auto 100px auto;
+}
+
+.icons{
+    display: flex;
+    margin: auto;
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    opacity: 0.9
+}
+
+.contact img{
+    height: 60px;
+    width: 60px;
+    opacity: 0.7;
+}
+
+.contact a{
+    margin: auto;
+}
+
+.contact h1{
+    text-transform: uppercase;
+}
+
+.contact a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.contact p{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.contact img:hover{
+    opacity: 1;
+}
+
+.resume{
+    outline-style: auto;
+    opacity: 0.8;
+}
+
+.resume:hover{
+    opacity: 1;
+    font-size: 30px;
+    outline-style: none;
+}
+
+@media screen and (max-width: 1240px) {                    
+
+    .icons{
+        width: 150px;
+    }
+
+    .contact img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .contact a{
+        font-size: 15px;
+    }
+
+    .contact p{
+        font-size: 15px;
+        margin: 5px;
+    }
+
+    .resume:hover{
+        font-size: 17px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*extras*/
+
+.mainDiv{
+
+    background-color: rgb(136, 132, 132, 0.3);
+    color: aliceblue;
+    height: auto;
+    padding-bottom: 20px;
+    width: 100%;
+    position: absolute;
+    padding-top: 100px;
+    text-align: center;
+
+}
+
+.mainDiv:hover{
+
+    background-color: rgb(136, 132, 132, 0.4);
+
+}
+
+.about{
+
+    top: 100px;
+    width: 90%;
+    margin-left: 5%;
+
+}
+
+.skills{
+
+    top: 1200px;
+    height: 900px;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+.education{
+
+    top: 2300px;
+    height: 900px;
+    width: 90%;
+    margin-left: 5%;
+
+}
+
+.project{
+
+    top: 3400px;
+
+}
+
+.hobbies{
+
+    top: 4500px;
+    width: 88%;
+    margin-left: 6%;
+
+}
+
+.contact{
+
+    top: 5600px;
+    height: 500px;
+    width: 60%;
+    margin-left: 20%;
+
+}
+
+@media screen and (max-width: 1240px){
+
+    .contact{
+
+        width: 100%;
+        margin-left: 0;
+
+    }    
+
+} 
+
+.hidden{
+
+    display: none;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+
+    font-size: 50px;
+
+}
+
+h2{
+
+    font-size: 35px;
+
+}
+
+/*responsive rules*/
+
+@media screen and (max-width: 1240px) {
+
+    h1{
+
+        font-size: 30px;
+
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+
+    h2{
+
+        display: none;
+    
+    }
+    
+}
+
+
+
